@@ -9,6 +9,7 @@ import newerImg from '@/public/images/C65EE828-4A30-462F-97EB-20BD146599E1_4_500
 
 
 import sqliteImg from '@/public/images/sqlite.svg'
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -17,6 +18,7 @@ export default function Header() {
       {/* <ThemeToggle /> */}
       {/* Intro */}
       <div className="mb-10">
+        <Link href={'..'}>
         <Image
           className="inline-flex rounded-full shadow-lg mb-4"
           src={newerImg}
@@ -25,6 +27,7 @@ export default function Header() {
           alt="Istafa Anthony Marshall"
           priority
         />
+        </Link>
 
         <div className="mb-5">
           <h1 className="font-inter-tight font-bold text-gray-800 dark:text-gray-100 text-2xl mb-1">
@@ -67,7 +70,7 @@ export default function Header() {
         <br></br>
       </div>
       <h2 className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
-        Projects
+        Featured Projects 
       </h2>
       <div className="group flex justify-center gap-4 ">
         <Image
@@ -103,6 +106,11 @@ export default function Header() {
           priority
         />
       </div>
+      <Link href={'/projects'} >
+        <h1>
+          Click here to view all Projects
+        </h1>
+      </Link>
     </header>
   );
 }

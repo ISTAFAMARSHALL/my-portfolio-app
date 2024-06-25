@@ -5,8 +5,7 @@ import stimsimg from '@/public/images/S.T.I.M.S Screenshot .jpeg'
 import maybellineImg from '@/public/images/Maybelline Catelog Screenshot.jpeg'
 import reservationappImg from '@/public/images/Reservation App Screenshot.jpeg'
 
-
-export default function ProjectsPage() {
+export default function ProjectDetailsPage (props) {
 
     const items = [
         {
@@ -47,21 +46,25 @@ export default function ProjectsPage() {
         }
     ]
 
+    let item = items.filter((item) => item.slug === props.params.slug)
+
     return (
         <>
-            {items.map((item) => {
+            {item.map((item) => {
                 return (
-                    <ul key={item.title} >
-                        <h1>{item.title}</h1>
+                    <div key={item.slug} style={{textAlign: 'center'}}>
                         <Image
                             src={item.screenshots}
-                            width={44}
-                            height={44}
                             alt={item.title}
                         />
-                        <Link href={`/projects/${item.slug}`}> View App Details</Link>
-
-                    </ul>
+                        <h1 style={{ fontSize: '50px'}}>{item.title}</h1>
+                        <span>{item.description}</span>
+                        <br></br>
+                        <span>{item.role_contributions}</span>
+                        <br></br>
+                        <span>{item.technology}</span>
+                        <br></br>
+                    </div>
                 )
             })}
         </>
