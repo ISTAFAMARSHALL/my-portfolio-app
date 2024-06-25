@@ -54,10 +54,10 @@ export default function ProjectDetailsPage (props) {
             {item.map((item) => {
                 return (
                     <div key={item.slug} style={{textAlign: 'center'}}>
-                        <Image
+                        {/* <Image
                             src={item.screenshots}
                             alt={item.title}
-                        />
+                        /> */}
                         <ImageSlideShow slug={item.slug} />
                         <h1 style={{ fontSize: '50px'}}>{item.title}</h1>
                         <span>{item.description}</span>

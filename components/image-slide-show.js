@@ -37,7 +37,21 @@ let allImgs = [
     {image: smartbuyImg3, alt:'smartbuyImg3'},
     {image: smartbuyImg4, alt:'smartbuyImg4'},
     {image: smartbuyImg5, alt:'smartbuyImg5'},
-
+    {image: stimsImg1, alt:'stimsImg1'},
+    {image: stimsImg2, alt:'stimsImg2 '},
+    {image: stimsImg3, alt:'stimsImg3'},
+    {image: stimsImg4, alt:'stimsImg4'},
+    {image: stimsImg5, alt:'stimsImg5'},
+    {image: reservationImg1, alt:'reservationImg1'},
+    {image: reservationImg2, alt:'reservationImg2'},
+    {image: reservationImg3, alt:'reservationImg3'},
+    {image: reservationImg4, alt:'reservationImg4'},
+    {image: reservationImg5, alt:'reservationImg5'},
+    {image: maybellineImg1, alt:'maybellineImg1'},
+    {image: maybellineImg2, alt:'maybellineImg2'},
+    {image: maybellineImg3, alt:'maybellineImg3'},
+    {image: maybellineImg4, alt:'maybellineImg4'},
+    {image: maybellineImg5, alt:'maybellineImg5'},
 ]
 
 export default function ImageSlideShow (props) {
@@ -47,7 +61,7 @@ export default function ImageSlideShow (props) {
     useEffect(() => {
         const interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) =>
-            prevIndex < allImgs.length - 1 ? prevIndex + 1 : 0
+            prevIndex < selectedProjectsImgs.length - 1 ? prevIndex + 1 : 0
         );
         }, 5000);
 
@@ -55,19 +69,14 @@ export default function ImageSlideShow (props) {
     }, []);
 
 
-
-    let selectedProjectsImgs = allImgs.filter((item) => item.alt.includes(props.slug));
+    let selectedProjectsImgs = allImgs.filter((item) => item.alt.includes(props.slug.split('-').shift()));
 
     return (
         <div >
-            {allImgs.map((image, index) => (
             <Image
-                key={index}
-                src={image.image}
-                className={index === currentImageIndex ? classes.active : ''}
-                alt={image.alt}
+                src={selectedProjectsImgs[currentImageIndex].image}
+                alt={selectedProjectsImgs[currentImageIndex].alt}
             />
-            ))}
       </div>
     )
 }
