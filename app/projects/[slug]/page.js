@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
+import ImageSlideShow from '@/components/image-slide-show'
 import smartBuyImg from '@/public/images/SmartBuy Screenshot .jpeg'
 import stimsimg from '@/public/images/S.T.I.M.S Screenshot .jpeg'
 import maybellineImg from '@/public/images/Maybelline Catelog Screenshot.jpeg'
@@ -57,6 +58,7 @@ export default function ProjectDetailsPage (props) {
                             src={item.screenshots}
                             alt={item.title}
                         />
+                        <ImageSlideShow slug={item.slug} />
                         <h1 style={{ fontSize: '50px'}}>{item.title}</h1>
                         <span>{item.description}</span>
                         <br></br>
