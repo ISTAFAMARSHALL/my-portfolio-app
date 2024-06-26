@@ -18,8 +18,8 @@ export default async function Home() {
       <Experience />
       <Tutorials />
       <Articles />
-      <SideHustles />
-      <Recommendations />
+      {/* <SideHustles /> */}
+      {/* <Recommendations /> */}
       <Newsletter />
     </>
   );

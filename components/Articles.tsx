@@ -1,25 +1,44 @@
 export default function Articles() {
   const items = [
     {
-      title: "KumoX Images Now available On Docker Hub",
-      link: "#0",
+      title: "Phase 1 - Project Complete: 5 things I learned along the way!",
+      link: "https://medium.com/@istafa.a.marshall/phase-1-project-complete-5-things-i-learned-along-the-way-c7de3da265a1",
       source: "medium.com",
       description:
-        "Today, KumoX announced that it has become a DVP, marking a significant milestone for our shared mission to enhance the security.",
+        "Phase 1 project at Flatiron School, highlighting five key lessons learned during the process. It covers the importance of using Google for problem-solving, planning thoroughly, utilizing console.log for debugging, practicing patience, and the value of consistent practice to improve coding skills."
+      ,
     },
     {
-      title: "Nobody Wants To Work with Josh",
-      link: "#0",
+      title: "Phase 5 - Working with React and its advantages over Javascript",
+      link: "https://medium.com/@istafa.a.marshall/working-with-react-and-its-advantages-over-javascript-8aca46efc92c",
       source: "medium.com",
       description:
-        "There was a wizard engineer (we'll call him “Josh”) who worked for me a few years ago. His code was good. His PRs were quick.",
+        "Phase 2 project at Flatiron School, focusing on the advantages of using React over JavaScript for web development. It highlights React's features such as JSX, component-based architecture, and client-side routing, explaining how these tools streamline development and enhance user experience."
+      ,
     },
     {
-      title: "A Sharp And Solid Outline Of 3D Grid Magic",
-      link: "#0",
-      source: "indiehackers.com",
+      title: "Phase 3 - Becoming a Full-Stack Developer",
+      link: "https://medium.com/@istafa.a.marshall/phase-3-becoming-a-full-stack-developer-five-things-learned-e6c3b929c328",
+      source: "medium.com",
       description:
-        "Since the world is 3D, it's no surprise that video games, mobile robotics challenges, and architectural design tools often require 3D variants.",
+        "Phase 3 of Flatiron School, where I transitioned from front-end to back-end development, learning to build server-side applications using Ruby and its associated libraries. The article highlights the development of my first full-stack project, a Gaming Todo List app, emphasizing the challenges and rewards of becoming a full-stack developer."
+      ,
+    },
+    {
+      title: "Phase 4 - Deploying my first API using Ruby on Rails",
+      link: "https://medium.com/@istafa.a.marshall/phase-4-deploying-my-first-api-using-ruby-on-rails-19ab4ccc337b",
+      source: "medium.com",
+      description:
+        "Phase 4 project at Flatiron School, where I developed my first API using Ruby on Rails to create an account and make restaurant reservations. The article covers key features like Rails generators, serializers, and authentication tools, highlighting how these components streamline development and enhance security."
+      ,
+    },
+    {
+      title: "Phase 5 Complete - Building the S.T.I.M.S App",
+      link: "https://medium.com/@istafa.a.marshall/phase-5-complete-building-the-s-t-i-m-s-app-9d0cc598bdb8",
+      source: "medium.com",
+      description:
+        "Phase 5 project at Flatiron School, where I developed the S.T.I.M.S (Student Teacher Integrated Management System) app, a comprehensive educational platform. The journey highlights my growth in software engineering, from initial programming interests in high school to overcoming technical challenges using Ruby on Rails, PostgreSQL, and React."
+      ,
     },
   ];
 
@@ -52,7 +71,12 @@ export default function Articles() {
                 {item.source}
               </div>
               <h3 className="font-semibold text-gray-800 dark:text-gray-100">
-                <a className="before:absolute before:inset-0" href={item.link}>
+                <a className="before:absolute before:inset-0" 
+                href={item.link}
+                aria-label="Medium"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
                   {item.title}
                 </a>
               </h3>
