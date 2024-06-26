@@ -4,7 +4,7 @@ import Articles from "@/components/Articles";
 import SideHustles from "@/components/SideHustles";
 import Recommendations from "@/components/Recommendations";
 import Newsletter from "@/components/Newsletter";
-import BagdeIcons from "@/components/ui/badges";
+import Header from "@/components/ui/header";
 
 export const metadata = {
   title: "Home - DevFolio",
@@ -14,8 +14,8 @@ export const metadata = {
 export default async function Home() {
   return (
     <>
+      <Header/>
       <Experience />
-      < BagdeIcons />
       <Tutorials />
       <Articles />
       <SideHustles />

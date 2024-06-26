@@ -11,14 +11,14 @@ import newerImg from '@/public/images/C65EE828-4A30-462F-97EB-20BD146599E1_4_500
 import sqliteImg from '@/public/images/sqlite.svg'
 import Link from "next/link";
 
-export default function Header() {
+export default function MainHeader() {
   return (
     <header className="text-center pt-6">
       {/* Dark mode toggle */}
       {/* <ThemeToggle /> */}
       {/* Intro */}
       <div className="mb-10">
-        {/* <Link href={'..'}>
+        <Link href={'..'}>
         <Image
           className="inline-flex rounded-full shadow-lg mb-4"
           src={newerImg}
@@ -27,18 +27,18 @@ export default function Header() {
           alt="Istafa Anthony Marshall"
           priority
         />
-        </Link> */}
+        </Link>
 
-        {/* <div className="mb-5">
+        <div className="mb-5">
           <h1 className="font-inter-tight font-bold text-gray-800 dark:text-gray-100 text-2xl mb-1">
             Istafa Anthony Marshall
           </h1>
           <p className="text-sm text-gray-600 dark:text-gray-400">
             Frontend developer and from NYC 🇺🇸
           </p>
-        </div> */}
+        </div>
  
-        <p style={{marginTop:'-90px'}}>
+        {/* <p>
           From the high-stakes world of Navy missile defense to the dynamic arenas of sales and support leadership, my career is a testament to adaptability and resilience. 
           <br></br>
           <br></br>
@@ -47,16 +47,14 @@ export default function Header() {
           I excel at crafting compelling user interfaces, sculpted from a customer-centric approach to provide an intuitive and engaging experience for users.
         </p>
         <br></br>
-          {/* I've evolved into a Software Developer following my successful completion of Flatiron School. */}
-          {/* At Flatiron School, I mastered JavaScript, React, Ruby, and Rails, developing several full-stack applications. */}
-          {/* During my tenure as a Territory Manager, I drove and maintained a 40% GOP, demonstrating my ability to deliver impactful results.  */}
+          
         <p>
           My passion lies in contributing my skills in front-end technologies to create visually stunning and user-friendly applications that meet and exceed client expectations. 
           
-          {/* With a unique blend of military precision, managerial expertise, and technical prowess, I am ready to bring innovative solutions to a forward-thinking team.  */}
+          
           <br></br>
           <br></br>
-          {/* Let's collaborate to drive innovation and achieve remarkable results together. */}
+
         </p>
 
         
@@ -76,7 +74,7 @@ export default function Header() {
       
         <br></br>
       </div>
-      <h2 style={{marginBottom: '5px'}} className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
+      <h2 className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
         Featured Projects 
       </h2>
       <div className="group flex justify-center gap-4 ">
@@ -111,13 +109,13 @@ export default function Header() {
           height={180}
           alt="Reservation App"
           priority
-        />
+        /> */}
       </div>
-      <Link href={'/projects'} >
-        <h1 style={{margin: '10px', fontWeight:'bold', fontStyle: 'italic'}}>
+      {/* <Link href={'/projects'} >
+        <h1>
           Click here to view all Projects
         </h1>
-      </Link>
+      </Link> */}
     </header>
   );
 }
