@@ -27,9 +27,14 @@ export default function ProjectDetailsPage(props) {
         {
             title: "S.T.I.M.S",
             slug: "stims",
-            description: "Educational app",
+            description: "S.T.I.M.S (Student Teacher Integrated Management System) is an advanced educational management tool optimized for seamless teacher-student interaction and academic tracking. Designed to offer ease of use akin to Facebook, S.T.I.M.S provides a separate user interface for students and teachers, allowing them to communicate effectively and monitor educational progress. Key features include the ability to view class schedules, access a directory of all students and teachers within the assigned school, and track academic performance. Leveraging React for the frontend and Rails for the backend, S.T.I.M.S ensures a reliable, scalable, and user-friendly platform, making it an invaluable asset for modern educational environments.",
             role_contributions: "Created by Istafa A Marshall",
-            technology: "React, Ruby on Rails",
+            technology: [
+                "Frontend Development: Developed with React to ensure a dynamic, responsive, and interactive user interface tailored to both students and teachers.",
+                "Styling: Utilized CSS to create a clean, modern, and user-friendly design, enhancing usability and engagement.",
+                "Backend Development: Built with Rails to efficiently manage complex educational data and ensure secure communication between users.",
+                "Database Management: Implemented PostgreSQL for robust and scalable data storage, supporting comprehensive academic tracking and user management.",
+            ],
             link: "",
             demo: "",
             github: '',
