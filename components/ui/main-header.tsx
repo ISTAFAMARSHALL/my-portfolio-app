@@ -34,7 +34,7 @@ export default function MainHeader() {
             Istafa Anthony Marshall
           </h1>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            Frontend developer and from NYC 🇺🇸
+          Front-End Developer (React, Next.js) from NYC 🇺🇸
           </p>
         </div>
  
