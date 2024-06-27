@@ -27,12 +27,12 @@ export default function ProjectDetailsPage(props) {
         {
             title: "S.T.I.M.S",
             slug: "stims",
-            description: "S.T.I.M.S (Student Teacher Integrated Management System) is an advanced educational management tool optimized for seamless teacher-student interaction and academic tracking. Designed to offer ease of use akin to Facebook, S.T.I.M.S provides a separate user interface for students and teachers, allowing them to communicate effectively and monitor educational progress. Key features include the ability to view class schedules, access a directory of all students and teachers within the assigned school, and track academic performance. Leveraging React for the frontend and Rails for the backend, S.T.I.M.S ensures a reliable, scalable, and user-friendly platform, making it an invaluable asset for modern educational environments.",
+            description: "S.T.I.M.S (Student Teacher Integrated Management System) is an advanced educational management tool optimized for seamless teacher-student interaction and academic tracking. Designed to offer ease of use akin to Facebook, S.T.I.M.S provides a separate user interface for students and teachers, allowing them to communicate effectively and monitor educational progress. Key features include the ability to view class schedules, access a directory of all students and teachers within the assigned school, and track academic performance. Leveraging React for the frontend and Rails for the back-end, S.T.I.M.S ensures a reliable, scalable, and user-friendly platform, making it an invaluable asset for modern educational environments.",
             role_contributions: "Created by Istafa A Marshall",
             technology: [
-                "Frontend Development: Developed with React to ensure a dynamic, responsive, and interactive user interface tailored to both students and teachers.",
+                "Front-end Development: Developed with React to ensure a dynamic, responsive, and interactive user interface tailored to both students and teachers.",
                 "Styling: Utilized CSS to create a clean, modern, and user-friendly design, enhancing usability and engagement.",
-                "Backend Development: Built with Rails to efficiently manage complex educational data and ensure secure communication between users.",
+                "Back-end Development: Built with Rails to efficiently manage complex educational data and ensure secure communication between users.",
                 "Database Management: Implemented PostgreSQL for robust and scalable data storage, supporting comprehensive academic tracking and user management.",
             ],
             link: "",
@@ -43,9 +43,14 @@ export default function ProjectDetailsPage(props) {
         {
             title: "Maybelline Catelog Collection",
             slug: "maybelline-catelog-collection",
-            description: "Mark up Tracker",
+            description: "The Maybelline Catalog Collection app is designed to offer users a seamless and engaging experience in managing their favorite Maybelline products. With a dynamic front-end built using React and styled with CSS, the app ensures an intuitive and visually appealing interface. Users can easily view, add, and delete items from their collection, as well as mark their favorite products for quick access. The back-end, powered by a local db.json file, efficiently manages all data interactions, making the app both reliable and efficient. This robust and user-centric application aims to enhance the way users interact with their favorite beauty products, bringing convenience and customization to their fingertips.",
             role_contributions: "Created by Istafa A Marshall",
-            technology: "React, Ruby on Rails",
+            technology: [
+                "Front-end Development: Built using React to deliver a dynamic and responsive user interface, ensuring smooth and interactive user experiences.",
+                "Styling: Implemented with CSS to create a visually appealing and user-friendly design, enhancing the overall usability of the app.",
+                "Back-end Management: Utilized a local db.json file to manage data, allowing for efficient handling of product information and user interactions.",
+                "Functionality: Enabled features to add, delete, and mark favorites in the collection, providing a comprehensive and customizable user experience.",
+            ],
             link: "",
             demo: "",
             github: '',
@@ -54,9 +59,14 @@ export default function ProjectDetailsPage(props) {
         {
             title: "Reservation App",
             slug: "reservation-app",
-            description: "Restaurant Tracker",
+            description: "The Reservation App is a comprehensive platform designed to simplify the process of managing restaurant reservations. Built with a dynamic React front-end and a robust Ruby on Rails back-end, the app offers a seamless and secure user experience. Users can create individual accounts with secure login functionality, view, add, and delete restaurant listings, and manage reservations with ease. The app's clean and modern design, styled with CSS, ensures an intuitive and visually appealing interface. By streamlining the reservation process, the Reservation App provides a convenient and efficient solution for both users and restaurant owners, enhancing the overall dining experience.",
             role_contributions: "Created by Istafa A Marshall",
-            technology: "React, Ruby on Rails",
+            technology: [
+                "Front-end Development: Developed using React to create a dynamic and responsive user interface, ensuring a seamless user experience.",
+                "Styling: Utilized CSS for a clean, modern, and user-friendly design, enhancing visual appeal and usability.",
+                "Back-end Development: Built with Ruby on Rails to manage complex data processing and ensure secure user authentication and data transactions.",
+                "Functionality: Implemented features for users to securely log in, view, add, and delete restaurants, as well as create and manage reservations at various locations.",
+            ],
             link: "",
             demo: "",
             github: '',
@@ -72,7 +82,7 @@ export default function ProjectDetailsPage(props) {
                 <div key={item.slug}>
                     {/* <Image src={item.screenshots} alt={item.title} /> */}
 
-                    <h1 style={{ fontSize: '50px', textAlign: 'center' }}>{item.title}</h1>
+                    <h1 style={{ fontSize: '50px',  marginTop: '-80px', textAlign: 'center' }}>{item.title}</h1>
                     
                     <ImageSlideShow slug={item.slug} fill />
 

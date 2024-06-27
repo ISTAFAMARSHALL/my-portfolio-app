@@ -3,7 +3,7 @@ import BagdeIcons from "@/components/ui/badges";
 export default function AboutMePage () {
     return (
         <>
-            <div class="container" style={{marginTop:'-25px'}} >
+            <div class="container" style={{marginTop:'-70px'}} >
                 <section class="bio" style={{ textAlign:'justify'}}>
                     <h2 style={{ textAlign:'center' , fontSize:'30px' , fontWeight:'bold'}}
                     >About Me</h2>
