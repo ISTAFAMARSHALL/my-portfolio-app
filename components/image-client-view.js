@@ -27,7 +27,7 @@ export default function ImageClientView (props) {
             
             <a style={{display: 'block'}} href={'/projects/stims'}>
                 <Image
-                    className="rounded-xl even:rotate-2 odd:-rotate-2 group-hover:rotate-0 transition duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)] shadow-lg"
+                    className="rounded-xl odd:rotate-2 even:-rotate-2 group-hover:rotate-0 transition duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)] shadow-lg"
                     src={stimsimg}
                     width={180}
                     height={180}

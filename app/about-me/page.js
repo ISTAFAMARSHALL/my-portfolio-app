@@ -11,7 +11,7 @@ export default function AboutMePage () {
         <>
             <div style={{marginTop:'-70px'}} >
                 <section style={{ textAlign:'justify'}}>
-                    <h2 style={{ textAlign:'center' , fontSize:'30px' , fontWeight:'bold'}}
+                    <h2 style={{ textAlign:'center' , fontSize:'30px' , fontWeight:'bold', marginBottom: '5px'}}
                     >About Me</h2>
                     {/* <p>I enjoy video games, eating, cooking, and spending time with the family.</p> */}
                     {/* <h2>My Journey</h2> */}
@@ -23,7 +23,7 @@ export default function AboutMePage () {
                     <p>Over the following 60 weeks, I mastered Javascript, React, HTML, and Ruby. I was able to hone my skills in front-end and back-end development. The learning curve was steep yet exhilarating knowing how rewarding the outcome would be upon completion.</p>
                     <p>Several apps later, I started Code By Istafa, LLC as a freelance venture aimed at cultivating 15-plus years of customer service management along with military precision, and planning to build world-changing applications.</p>
                     <p>My goal is to inspire through creativity, designing innovative engaging ways for users to interact with apps.</p> */}
-                    <br></br>
+                    
                     From a young age, I was captivated by technology. Whether it was setting up my grandfather's new gadgets or fixing electronic devices for friends and family, I was always the go-to tech enthusiast.
                     <br></br>
                     <br></br>

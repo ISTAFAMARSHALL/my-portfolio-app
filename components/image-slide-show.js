@@ -1,8 +1,6 @@
 
 'use client';
 
-import classes from './image-slideshow.module.css';
-
 import { useEffect, useState } from 'react';
 
 import Image from 'next/image'
@@ -68,14 +66,15 @@ export default function ImageSlideShow (props) {
         return () => clearInterval(interval);
     }, []);
 
-
     let selectedProjectsImgs = allImgs.filter((item) => item.alt.includes(props.slug.split('-').shift()));
 
     return (
         <div >
             <Image
+                style={{width: 'auto' , height: 'auto'}}
                 src={selectedProjectsImgs[currentImageIndex].image}
                 alt={selectedProjectsImgs[currentImageIndex].alt}
+                priority
             />
       </div>
     )

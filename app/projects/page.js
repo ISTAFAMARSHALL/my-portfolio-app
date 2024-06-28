@@ -143,11 +143,13 @@ export default function ProjectsPage() {
                 {items.map((item) => (
                     <li key={item.title} className={styles.projectItem}>
                         <div className={styles.imageContainer}>
-                            <Image
+                            <Image 
+                                style={{width: 'auto' , height: 'auto'}}
                                 src={item.screenshots}
                                 width={200} // Adjusted for visibility
                                 height={200} // Adjusted for visibility
                                 alt={item.title}
+                                priority
                             />
                         </div>
                         <h1>{item.title}</h1>

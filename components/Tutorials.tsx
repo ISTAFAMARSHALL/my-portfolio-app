@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Thumbnail01 from "@/public/images/tutorial-01.jpg";
 import Thumbnail02 from "@/public/images/tutorial-02.jpg";
+import Badges from '@/components/ui/badges'
 
 export default function Tutorials() {
   const items = [
@@ -18,8 +19,9 @@ export default function Tutorials() {
 
   return (
     <section>
-      <h2 className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
-        Tutorials
+      
+      <h2 style={{marginTop: "40px"}} className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
+        Tutorials 
       </h2>
       <div className="grid min-[580px]:grid-cols-2 gap-4 group">
         {items.map((item, index) => (

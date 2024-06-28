@@ -101,11 +101,11 @@ export default function ProjectDetailsPage(props) {
 
                     <h1 style={{ fontSize: '50px',  marginTop: '-80px', textAlign: 'center' }}>{item.title}</h1>
                     
-                    <ImageSlideShow slug={item.slug} fill />
+                    <ImageSlideShow slug={item.slug} fill style={{width: 'auto' , height: 'auto'}}/>
 
                     <p style={{ margin: '10px', marginTop: '10px', fontFamily: 'cursive', fontSize: '20px', textAlign: 'center' }}>{item.role_contributions}</p>
                     
-                    <h1 style={{ textAlign: 'left', fontSize: '20px', marginTop: '40px', textDecorationLine: 'underline' }}>Description</h1>
+                    <h1 style={{ textAlign: 'left', fontSize: '20px', marginTop: '20px', textDecorationLine: 'underline' }}>Description</h1>
 
                     <p style={{margin: '15px' , textAlign: 'justify' , marginTop: '5px' }}>{item.description}</p>
                     <br></br>
