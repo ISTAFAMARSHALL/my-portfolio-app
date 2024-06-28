@@ -6,7 +6,7 @@ export default function BagdeIcons () {
                 style={{margin: '10px', marginTop: '-10px',fontWeight:'bold' , textAlign: "center"}}>
                 Skills
             </h1>
-            <a style={{marginLeft:-90}} className="inline-flex fill-gray-800 dark:fill-gray-100"
+            <a style={{marginLeft:-85}} className="inline-flex fill-gray-800 dark:fill-gray-100"
             >
 
                 {/* react svg */}

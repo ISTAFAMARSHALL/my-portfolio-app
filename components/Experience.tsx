@@ -42,7 +42,7 @@ export default function Experience() {
   ];
 
   return (
-    <section style={{marginTop: '25px'}}>
+    <section style={{marginTop: '40px'}}>
       <h2 className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
         Experience
       </h2>

@@ -97,7 +97,6 @@ export default function ProjectDetailsPage(props) {
         <>
             {item.map((item , index) => (
                 <div key={item.title}>
-                    {/* <Image src={item.screenshots} alt={item.title} /> */}
 
                     <h1 style={{ fontSize: '50px',  marginTop: '-80px', textAlign: 'center' }}>{item.title}</h1>
                     

@@ -18,7 +18,7 @@ export default async function Home() {
       <Header/>
       <Badges/>
       <Experience />
-      <Tutorials />
+      {/* <Tutorials /> */}
       <Articles />
       {/* <SideHustles /> */}
       {/* <Recommendations /> */}

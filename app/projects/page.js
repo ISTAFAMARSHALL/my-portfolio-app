@@ -137,11 +137,25 @@ export default function ProjectsPage() {
 
     return (
         <div className={styles.container} >
-            <h2 style={{ textAlign:'center' , fontSize:'30px' , fontWeight:'bold'}}>All Projects</h2>
+            <h2 style={{ textAlign:'center' , fontSize:'30px', fontWeight:'bold'}}>All Projects</h2>
             
             <ul className={styles.projectList}>
                 {items.map((item) => (
-                    <li key={item.title} className={styles.projectItem}>
+                    <li key={item.title} className={styles.projectItem} 
+                    style={{ 
+                        border: '1px solid slategray', 
+                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
+                        padding: '20px', 
+                        margin: '20px', 
+                        transition: 'transform 0.3s, box-shadow 0.3s',
+                        borderRadius: '5px',
+                        hover: {
+                            transform: 'scale(1.05)',
+                            boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)'
+                        } 
+                    }}>
+                        <h1 style={{ textAlign:'center' , fontSize:'20px' , fontWeight:'bold'}} >{item.title}</h1>
+
                         <div className={styles.imageContainer}>
                             <Image 
                                 style={{width: 'auto' , height: 'auto'}}
@@ -152,8 +166,14 @@ export default function ProjectsPage() {
                                 priority
                             />
                         </div>
-                        <h1>{item.title}</h1>
-                        <Link href={`/projects/${item.slug}`}>View App Details</Link>
+                        
+                        <a style={{marginLeft: '5px'}}
+                            className="btn-sm text-gray-200 dark:text-gray-800 bg-gradient-to-r from-gray-800 to-gray-700 dark:from-gray-300 dark:to-gray-100 dark:hover:bg-gray-100 shadow relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.2)_50%,transparent_75%,transparent_100%)] dark:before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]"
+                            href={`/projects/${item.slug}`}
+                        >
+                            View App Details
+                        </a>
+                        {/* <Link  href={`/projects/${item.slug}`}>View App Details</Link> */}
                     </li>
                 ))}
             </ul>

@@ -43,7 +43,7 @@ export default function Articles() {
   ];
 
   return (
-    <section>
+    <section style={{marginTop:'20px'}}>
       <h2 className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
         Articles
       </h2>
