@@ -20,7 +20,7 @@ export default function Header() {
       >
       {/* Dark mode toggle */}
       
-      {/* <ThemeToggle /> */}
+      
       
       {/* Intro */}
       <div 

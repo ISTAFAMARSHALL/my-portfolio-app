@@ -15,7 +15,7 @@ export default function MainHeader() {
   return (
     <header className="text-center pt-6">
       {/* Dark mode toggle */}
-      {/* <ThemeToggle /> */}
+      <ThemeToggle/>
       {/* Intro */}
       <div className="mb-10">
         <Link href={'..'}>

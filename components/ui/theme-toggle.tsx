@@ -3,14 +3,16 @@
 import { useTheme } from "next-themes";
 
 export default function ThemeToggle() {
+
   const { theme, setTheme } = useTheme();
 
-  setTheme('dark')
+  let newThem="dark"
+  setTheme(newThem)
 
   return (
-    <div className="flex justify-end mb-2">
+    <div className="flex justify-end mb-2" style={{}}>
       <div className="inline-flex items-center justify-center ml-auto">
-        {/* <input
+        <input
           type="checkbox"
           name="light-switch"
           id="light-switch"
@@ -22,8 +24,8 @@ export default function ThemeToggle() {
             }
             return setTheme("dark");
           }}
-        /> */}
-        {/* <label className="relative cursor-pointer p-2" htmlFor="light-switch">
+        />
+        {/* <label className="relative cursor-pointer p-2" htmlFor="light-switch" >
           <svg
             className="dark:hidden"
             width={16}
