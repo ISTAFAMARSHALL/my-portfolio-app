@@ -1,6 +1,6 @@
 export const metadata = {
 
-    title: 'Isafa A Marshall - About Me',
+    title: 'About Me - Isafa A Marshall',
     description: "Learn more about my journey to becoming a developer",
     
   }

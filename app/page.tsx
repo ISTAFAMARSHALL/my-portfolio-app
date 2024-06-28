@@ -7,7 +7,7 @@ import Newsletter from "@/components/Newsletter";
 import Header from "@/components/ui/header";
 
 export const metadata = {
-  title: "Isafa A Marshall - Portfolio",
+  title: "My Portfolio - Isafa A Marshall",
   description: "Front-End Developer (React, Next.js) from NYC 🇺🇸",
 };
 

@@ -1,6 +1,6 @@
 
 export const metadata = {
-    title: "Isafa A Marshall - My Resume",
+    title: "My Resume - Isafa A Marshall",
     description: "Front-End Developer (React, Next.js) from NYC 🇺🇸",
 };
 
