@@ -1,10 +1,16 @@
-import BagdeIcons from "@/components/ui/badges";
+export const metadata = {
+
+    title: 'Isafa A Marshall - About Me',
+    description: "Learn more about my journey to becoming a developer",
+    
+  }
+
 
 export default function AboutMePage () {
     return (
         <>
-            <div class="container" style={{marginTop:'-70px'}} >
-                <section class="bio" style={{ textAlign:'justify'}}>
+            <div style={{marginTop:'-70px'}} >
+                <section style={{ textAlign:'justify'}}>
                     <h2 style={{ textAlign:'center' , fontSize:'30px' , fontWeight:'bold'}}
                     >About Me</h2>
                     {/* <p>I enjoy video games, eating, cooking, and spending time with the family.</p> */}

@@ -9,9 +9,6 @@ import reservationappImg from '@/public/images/Reservation App Screenshot.jpeg'
 
 export default function ImageClientView (props) {
 
-    function takeBack () {
-        redirect('projects/smart-buy')
-    }
     return (
         <div
             className="group justify-center gap-1 " 

@@ -7,8 +7,8 @@ import Newsletter from "@/components/Newsletter";
 import Header from "@/components/ui/header";
 
 export const metadata = {
-  title: "Home - DevFolio",
-  description: "Page description",
+  title: "Isafa A Marshall - Portfolio",
+  description: "Front-End Developer (React, Next.js) from NYC 🇺🇸",
 };
 
 export default async function Home() {

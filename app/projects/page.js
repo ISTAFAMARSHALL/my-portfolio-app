@@ -6,7 +6,14 @@ import maybellineImg from '@/public/images/Maybelline Catelog Screenshot.jpeg'
 import reservationappImg from '@/public/images/Reservation App Screenshot.jpeg'
 
 
-export default function ProjectsPage() {
+export const metadata = {
+
+    title: "All Projects",
+    description: "View all projects created by developer Istafa A. Marshall",
+    
+}
+  
+  export default function ProjectsPage() {
 
     const items = [
         {
