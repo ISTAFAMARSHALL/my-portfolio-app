@@ -21,6 +21,8 @@ export default function BadgeIcons() {
 
     const carouselSecondaryStyle = {
         ...carouselStyle,
+        animation: 'scroll-horizontal 20s linear infinite',
+        
         animationDelay: '22s',
     };
 

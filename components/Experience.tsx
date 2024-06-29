@@ -18,8 +18,12 @@ export default function Experience() {
       icon: <SvgCodeByIstafa />,
       date: "2023 - Today",
       location: "Holtsville, NY",
-      description:
-        "Setting vision, leadership, processes while directly participating in communications with clients such as eBay, Amazon, X, Twitch, Instagram, and many others.",
+      description:[
+        "Designed and developed custom software solutions using Javascript, Ruby, HTML, CSS, React, Next.js, and TypeScript to meet client needs.",
+        "Engaged with clients to understand their requirements, provided technical advice, and tailored software solutions to match their business goals.",
+        "Engaged with clients to understand their requirements, provided technical advice, and tailored software solutions to match their business goals.",
+        "Managed project timelines, coordinated with clients, and ensured timely delivery of high-quality software products",
+      ]
     },
     {
       title: "Fullstack Developer at Flatiron School",
@@ -27,8 +31,13 @@ export default function Experience() {
       icon: <SvgFlatironSchool />,
       date: "2022 - 2023",
       location: "New York, NYC",
-      description:
-        "Setting vision, leadership, processes while directly participating in communications with clients such as eBay, Amazon, X, Twitch, Instagram, and many others.",
+      description:[
+        "Created and deployed full-stack web applications using Javascript, Ruby, HTML, CSS, and React.",
+        "orked in teams to design, develop, and present capstone projects, simulating real-world software development environments.",
+        "Participated in peer code reviews and debugging sessions, enhancing code quality and problem-solving skills.",
+        "Produced detailed technical documentation for projects, demonstrating the ability to communicate complex technical concepts clearly.",
+      ]
+
     },
     // {
     //   title: "System Engineer and Web Developer at Vimeo",
@@ -73,9 +82,16 @@ export default function Experience() {
                     {item.location}
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                {/* <p className="text-sm text-gray-600 dark:text-gray-400">
                   {item.description}
-                </p>
+                </p> */}
+                <ul >
+                        {item.description.map((bullet, index) => (
+                            <div style={{ marginTop: '-15px'}}>
+                            <li key={index} style={{ margin: '25px' , textAlign: 'left' , marginLeft:'30px' , listStyle:'outside' }} >{bullet}</li>
+                            </div>
+                        ))}
+                    </ul>
               </div>
             </div>
           </article>
