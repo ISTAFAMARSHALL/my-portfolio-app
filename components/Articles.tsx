@@ -9,7 +9,7 @@ export default function Articles() {
       ,
     },
     {
-      title: "Phase 5 - Working with React and its advantages over Javascript",
+      title: "Phase 2 - Working with React and its advantages over Javascript",
       link: "https://medium.com/@istafa.a.marshall/working-with-react-and-its-advantages-over-javascript-8aca46efc92c",
       source: "medium.com",
       description:
