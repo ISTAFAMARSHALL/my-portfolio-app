@@ -98,16 +98,16 @@ const items = [
     {
         title: "Smart Buy",
         slug: "smart-buy",
-        description: "Best Buy Clone",
+        description: "Smart Buy is an innovative e-commerce platform inspired by Best Buy, designed to deliver an exceptional online shopping experience.",
         role_contributions: "Created App",
-        technology: "React, Ruby on Rails",
+        technology: "React, Ruby on Rails,",
         links: "",
         screenshots: smartBuyImg
     },
     {
         title: "S.T.I.M.S",
         slug: "stims",
-        description: "Educational app",
+        description: "S.T.I.M.S (Student Teacher Integrated Management System) is an advanced educational management tool optimized for seamless teacher-student interaction and academic tracking.",
         role_contributions: "Created App",
         technology: "React, Ruby on Rails",
         links: "",
@@ -116,7 +116,7 @@ const items = [
     {
         title: "Maybelline Catelog Collection",
         slug: "maybelline-catelog-collection",
-        description: "Mark up Tracker",
+        description: "The Maybelline Catalog Collection app is designed to offer users a seamless and engaging experience in managing their favorite Maybelline products.",
         role_contributions: "Created App",
         technology: "React, Ruby on Rails",
         links: "",
@@ -125,7 +125,7 @@ const items = [
     {
         title: "Reservation App",
         slug: "reservation-app",
-        description: "Restaurant Tracker",
+        description: "The Reservation App is a comprehensive platform designed to simplify the process of managing restaurant reservations.",
         role_contributions: "Created App",
         technology: "React, Ruby on Rails",
         links: "",
@@ -137,7 +137,7 @@ export default function ProjectsPage() {
 
     return (
         <div className={styles.container} >
-            <h2 style={{ textAlign:'center' , fontSize:'30px', fontWeight:'bold'}}>All Projects</h2>
+            <h2 style={{ textAlign:'center' , fontSize:'45px', fontWeight:'bold'}}>All Projects</h2>
             
             <ul className={styles.projectList}>
                 {items.map((item) => (
@@ -154,7 +154,7 @@ export default function ProjectsPage() {
                             boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)'
                         } 
                     }}>
-                        <h1 style={{ textAlign:'center' , fontSize:'20px' , fontWeight:'bold'}} >{item.title}</h1>
+                        <h1 style={{ textAlign:'center' , fontSize:'26px' , fontWeight:'bolder', margin: '10px'}} >{item.title}</h1>
 
                         <div className={styles.imageContainer}>
                             <Image 
@@ -166,6 +166,10 @@ export default function ProjectsPage() {
                                 priority
                             />
                         </div>
+
+                        <p style={{margin: '20px'}}>
+                        {item.description}
+                        </p>
                         
                         <a style={{marginLeft: '5px'}}
                             className="btn-sm text-gray-200 dark:text-gray-800 bg-gradient-to-r from-gray-800 to-gray-700 dark:from-gray-300 dark:to-gray-100 dark:hover:bg-gray-100 shadow relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.2)_50%,transparent_75%,transparent_100%)] dark:before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]"

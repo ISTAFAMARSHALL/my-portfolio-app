@@ -16,7 +16,7 @@ export default function Experience() {
       title: "Front-end Developer at Code by Istafa",
       link: "#0",
       icon: <SvgCodeByIstafa />,
-      date: "2023 - Today",
+      date: "2022 - Today",
       location: "Holtsville, NY",
       description:[
         "Designed and developed custom software solutions using Javascript, Ruby, HTML, CSS, React, Next.js, and TypeScript to meet client needs.",
@@ -29,7 +29,7 @@ export default function Experience() {
       title: "Fullstack Developer at Flatiron School",
       link: "#0",
       icon: <SvgFlatironSchool />,
-      date: "2022 - 2023",
+      date: "2021 - 2022",
       location: "New York, NYC",
       description:[
         "Created and deployed full-stack web applications using Javascript, Ruby, HTML, CSS, and React.",
