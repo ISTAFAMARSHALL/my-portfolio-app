@@ -1,3 +1,8 @@
+import Image from 'next/image'
+import resume1 from '@/public/images/Front-End-Developer-Resume.jpg'
+import resume2 from '@/public/images/Screenshot Resume 2.jpeg'
+import resume3 from '@/public/images/Screenshot Resume 3.jpeg'
+
 
 export const metadata = {
     title: "My Resume - Isafa A Marshall",
@@ -9,10 +14,19 @@ export default function ResumePage () {
 
     return (
         <>
-            <h1>View my Resume here</h1>
+            <h1 style={{ textAlign:'center' , fontSize:'30px' , fontWeight:'bold', marginTop:'-70px'}}>
+                My Resume
+            </h1>
 
+            <Image
+                src={resume1}
+                
+                priority
+            />
 
-            <p>Ensure you can download it and highlight your strenghts</p>
+            {/* <p>Download Now</p> */}
+
+            {/* <p>it and highlight your strenghts</p> */}
             
         </>
     )
