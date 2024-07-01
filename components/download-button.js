@@ -1,9 +1,22 @@
 'use client'
+import { useState } from 'react';
 
 export default function DownloadButton () {
 
-    const handleDownload = () => {
-        window.location.href = '/download-resume';
+    const [loading, setLoading] = useState(false);
+
+    const handleDownload = async () => {
+        setLoading(true);
+        const response = await fetch('/download-resume');
+        const base64 = await response.text();
+
+        const link = document.createElement('a');
+        link.href = `data:application/pdf;base64,${base64}`;
+        link.download = 'Istata_Marshall_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        setLoading(false);
     };
 
     return (
@@ -17,8 +30,9 @@ export default function DownloadButton () {
                     fontWeight: 'bold', 
                     cursor: 'pointer'
                 }}
+                disabled={loading}
             >
-                Download Resume (PDF)
+                {loading ? 'Downloading...' : 'Download Resume (PDF)'}
             </button>
     )
 }
