@@ -53,7 +53,9 @@ export default async function ResumePage() {
                 src={resume1}
                 priority
             />
-
+            
+            <br></br>
+            <br></br>
             <DownloadButton />
 
             {/* <a
