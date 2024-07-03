@@ -22,7 +22,7 @@ const items = [
         ],
         link: "",
         demo: "",
-        github: "https://github.com/ISTAFAMARSHALL/S.T.I.M.S",
+        github: "https://github.com/ISTAFAMARSHALL/myCommerceApp",
         screenshots: smartBuyImg
     },
     {
@@ -121,12 +121,42 @@ export default function ProjectDetailsPage(props) {
                         ))}
                     </ul>
 
-                    <h1 style={{ textAlign: 'left', fontSize: '20px', textDecorationLine: 'underline' , marginTop: '30px'}}>Links</h1>
+                    <h1 style={{ textAlign: 'left', fontSize: '20px', textDecorationLine: 'underline' , marginTop: '40px'}}>Links</h1>
                     
                     <div style={{ margin: '15px' , listStyle:'outside' , marginTop: '5px'}} >
-                        <p>Live Demo:{}</p>
-                        <p>Tutorial:{}</p>
-                        <p>github:{}</p>
+                        { item.demo ? 
+                            <>
+                                <a 
+                                    href={item.demo}
+                                    aria-label={item.demo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Live Demo: Click here to be for the github Repository
+                                </a>
+                                <br></br>
+                            </> 
+                            : 
+                            null
+                        }
+                        
+                        { item.link ? 
+                            <>
+                                <p>
+                                    Tutorial:{}
+                                </p> 
+                                <br></br>
+                            </> 
+                            : 
+                            null
+                        }
+                        
+                        { item.github ? <a
+                            href={item.github}
+                            aria-label={item.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >github: Click here for this app's github Repository</a> : null}
                     </div>
 
                     

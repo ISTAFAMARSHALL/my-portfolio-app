@@ -135,15 +135,15 @@ export default function ResumePage() {
                 priority
             />
 
-            <DownloadButton />
+            {/* <DownloadButton /> */}
 
-            <a 
+            {/* <a 
                 href="/Front-End-Developer-Resume.pdf" 
                 download='/Front-End-Developer-Resume.pdf'
             >
                 Download Here
                 
-            </a>
+            </a> */}
 
             {/* <Image src={resume1} alt='resume1' width="32" height="32" border="0"/> */}
             
