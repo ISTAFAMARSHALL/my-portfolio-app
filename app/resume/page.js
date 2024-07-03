@@ -126,7 +126,7 @@ export default function ResumePage() {
 
     return (
         <>
-            <h1 style={{ textAlign: 'center', fontSize: '30px', fontWeight: 'bold', marginTop: '-70px' }}>
+            <h1 style={{ textAlign: 'center', fontSize: '30px', fontWeight: 'bold', marginTop: '-70px' , marginBottom: '-20px' }}>
                 My Resume
             </h1>
 
