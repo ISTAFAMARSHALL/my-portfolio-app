@@ -1,4 +1,8 @@
-import Badges from '@/components/ui/badges'
+'use client';
+
+import { useState } from 'react';
+
+import {badgeIcons} from '@/app/lib/badge-icons'
 
 export default function BadgeIcons() {
     const containerStyle = {
@@ -42,6 +46,11 @@ export default function BadgeIcons() {
         transform: 'scale(1.1)',
     };
 
+    const [isScrollingPaused, setIsScrollingPaused] = useState(false);
+
+
+    console.log(badgeIcons)
+    
     return (
         <div>
             
@@ -168,6 +177,45 @@ export default function BadgeIcons() {
                     
                 </div>
             </div>
+            <div>
+            <div
+              className={`flex ${isScrollingPaused ? '' : 'animate-[infinite-scroll_120s_linear_infinite]'} items-start justify-center group-hover:[animation-play-state:paused] md:justify-start [&>*]:mx-3`}
+            >
+              {/* {badgeIcons.map((badge, index) => (
+                <Testimonial
+                  key={index}
+                  badge={badge}
+                  className="w-[22rem] transition-transform duration-300 group-hover:rotate-0"
+                >
+                </Testimonial>
+              ))} */}
+            </div>
+            <div
+              className={`flex ${isScrollingPaused ? '' : 'animate-[infinite-scroll_120s_linear_infinite]'} items-start justify-center group-hover:[animation-play-state:paused] md:justify-start [&>*]:mx-3`}
+              aria-hidden="true"
+            >
+              {/* {badgeIcons.map((badge, index) => (
+                <Testimonial
+                  key={index}
+                  badge={badge}
+                  cloned={true}
+                  className="w-[22rem] transition-transform duration-300 group-hover:rotate-0"
+                >
+                </Testimonial>
+              ))} */}
+            </div>
+
+            {/* {badgeIcons.img && (
+          <Image
+            className="shrink-0 rounded-full"
+            src={testimonial.img}
+            width={44}
+            height={44}
+            alt={testimonial.name}
+          />
+        )} */}
+
+          </div>
         </div>
     );
 }

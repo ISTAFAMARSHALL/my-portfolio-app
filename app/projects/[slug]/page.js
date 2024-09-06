@@ -5,10 +5,28 @@ import smartBuyImg from '@/public/images/SmartBuy Screenshot .jpeg';
 import stimsimg from '@/public/images/S.T.I.M.S Screenshot .jpeg';
 import maybellineImg from '@/public/images/Maybelline Catelog Screenshot.jpeg';
 import reservationappImg from '@/public/images/Reservation App Screenshot.jpeg';
+import moreThanJustaLunchappImg from '@/public/images/More than Just a Lunch IMG 1.png'
+
 import { title } from "process";
 
 
 const items = [
+    {
+        title: "More Than Just a Lunch App",
+        slug: "more-than-just-a-lunch-app",
+        description: "More Than Just a Lunch App is an intuitive platform designed to streamline the process of managing educational events and gatherings. Built using Next.js and React for the front-end, the app offers a dynamic and responsive user experience. Key features include a visually captivating image slideshow, clear and impactful messaging, and easy navigation for users to quickly access event registration and other relevant information. Integrated with the Mailjet API, the app ensures seamless email communication, making it an all-in-one solution for organizing events with ease and efficiency.",
+        role_contributions: "Created by Istafa A Marshall",
+        technology: [
+            "Front-end Development: Developed using Next.js and React to create a dynamic and responsive user interface, ensuring a seamless user experience.",
+            "Styling: Implemented modern CSS techniques for a clean, visually appealing, and user-friendly design.",
+            "Functionality: Incorporated features like event registration, user testimonials, and a dynamic image slideshow for a more engaging experience.",
+            "Email Integration: Integrated Mailjet API to facilitate smooth and efficient email communication."
+        ],
+        link: "",
+        demo: "https://nww-website-lunch-3.vercel.app/",
+        github: "https://github.com/ISTAFAMARSHALL/nww-website3.0",
+        screenshots: moreThanJustaLunchappImg
+    },
     {
         title: "Smart Buy",
         slug: "smart-buy",
@@ -34,7 +52,7 @@ const items = [
             "Front-end Development: Developed with React to ensure a dynamic, responsive, and interactive user interface tailored to both students and teachers.",
             "Styling: Utilized CSS to create a clean, modern, and user-friendly design, enhancing usability and engagement.",
             "Back-end Development: Built with Rails to efficiently manage complex educational data and ensure secure communication between users.",
-            "Database Management: Implemented PostgreSQL for robust and scalable data storage, supporting comprehensive academic tracking and user management.",
+            "Database Management: Implemented PostgreSQL for robust and scalable data storage, supporting comprehensive academic tracking and user management."
         ],
         link: "",
         demo: "",
@@ -50,7 +68,7 @@ const items = [
             "Front-end Development: Built using React to deliver a dynamic and responsive user interface, ensuring smooth and interactive user experiences.",
             "Styling: Implemented with CSS to create a visually appealing and user-friendly design, enhancing the overall usability of the app.",
             "Back-end Management: Utilized a local db.json file to manage data, allowing for efficient handling of product information and user interactions.",
-            "Functionality: Enabled features to add, delete, and mark favorites in the collection, providing a comprehensive and customizable user experience.",
+            "Functionality: Enabled features to add, delete, and mark favorites in the collection, providing a comprehensive and customizable user experience."
         ],
         link: "",
         demo: "",
@@ -66,7 +84,7 @@ const items = [
             "Front-end Development: Developed using React to create a dynamic and responsive user interface, ensuring a seamless user experience.",
             "Styling: Utilized CSS for a clean, modern, and user-friendly design, enhancing visual appeal and usability.",
             "Back-end Development: Built with Ruby on Rails to manage complex data processing and ensure secure user authentication and data transactions.",
-            "Functionality: Implemented features for users to securely log in, view, add, and delete restaurants, as well as create and manage reservations at various locations.",
+            "Functionality: Implemented features for users to securely log in, view, add, and delete restaurants, as well as create and manage reservations at various locations."
         ],
         link: "",
         demo: "",
@@ -75,10 +93,11 @@ const items = [
     }
 ];
 
+
 export async function generateMetadata({params}) {
 
     let item =  items.find((item) => item.slug === params.slug);
-    console.log(item.screenshots.src)
+    
     return{
         title: item.title,
         description: item.description,
@@ -96,7 +115,7 @@ export default function ProjectDetailsPage(props) {
     return (
         <>
             {item.map((item , index) => (
-                <div key={item.title}>
+                <div key={index}>
 
                     <h1 style={{ fontSize: '50px',  marginTop: '-80px', textAlign: 'center' }}>{item.title}</h1>
                     
@@ -113,17 +132,17 @@ export default function ProjectDetailsPage(props) {
 
                     <h1 style={{ textAlign: 'left', fontSize: '20px', textDecorationLine: 'underline' , marginTop: '-20px' }}>Technologies</h1>
 
-                    <ul >
-                        {item.technology.map((tech, index) => (
-                            <div style={{ marginTop: '-15px'}}>
+                    
+                    {item.technology.map((tech, index) => (
+                        <ul style={{ marginTop: '-15px'}}>
                             <li key={index} style={{ margin: '25px' , textAlign: 'left' , marginLeft:'30px' , listStyle:'outside' }} >{tech}</li>
-                            </div>
-                        ))}
-                    </ul>
+                        </ul>
+                    ))}
+                    
 
                     <h1 style={{ textAlign: 'left', fontSize: '20px', textDecorationLine: 'underline' , marginTop: '40px'}}>Links</h1>
                     
-                    <div style={{ margin: '15px' , listStyle:'outside' , marginTop: '5px'}} >
+                    <div style={{ margin: '15px' , listStyle:'outside' , marginTop: '5px', }} >
                         { item.demo ? 
                             <>
                                 <a 
@@ -132,7 +151,7 @@ export default function ProjectDetailsPage(props) {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    Live Demo: Click here to be for the github Repository
+                                    Live Demo: Click here to preview live Site
                                 </a>
                                 <br></br>
                             </> 
@@ -156,7 +175,7 @@ export default function ProjectDetailsPage(props) {
                             aria-label={item.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                        >github: Click here for this app's github Repository</a> : null}
+                        >github: Click here to view app's github Repository</a> : null}
                     </div>
 
                     

@@ -1,6 +1,8 @@
+import Image from 'next/image';
+
 import flatIronImg from '@/public/images/id69leq3tX_1719602564623.png'
 import codebyistafImg from '@/public/images/C65EE828-4A30-462F-97EB-20BD146599E1_4_5005_c.jpeg'
-import Image from 'next/image';
+import ascentUpImg from '@/public/images/AscentUP_logo_161x40.png'
 
 const SvgFlatironSchool = () => (
     <Image src={flatIronImg} alt={flatIronImg.src}  width={40} height={40} className="shrink-0 w-10 h-10 rounded-full"/>
@@ -10,32 +12,46 @@ const SvgCodeByIstafa= () => (
   <Image src={codebyistafImg} alt={codebyistafImg.src} width={80} height={80} className="shrink-0 w-10 h-10 rounded-full"/>
 );
 
+const SvgAscentUp= () => (
+  <Image src={ascentUpImg} alt={ascentUpImg.src} width={80} height={80} className=" bg-white w-10 h-5 rounded-full"/>
+);
+
 export default function Experience() {
   const items = [
     {
-      title: "Front-end Developer at Code by Istafa",
+      title: "Software Developer Intern | AscentUp",
       link: "#0",
-      icon: <SvgCodeByIstafa />,
-      date: "2022 - Today",
-      location: "Holtsville, NY",
+      icon: <SvgAscentUp />,
+      date: "July 2024 - September 2024",
+      location: "Remote",
       description:[
-        "Designed and developed custom software solutions using Javascript, Ruby, HTML, CSS, React, Next.js, and TypeScript to meet client needs.",
-        "Engaged with clients to understand their requirements, provided technical advice, and tailored software solutions to match their business goals.",
-        "Engaged with clients to understand their requirements, provided technical advice, and tailored software solutions to match their business goals.",
-        "Managed project timelines, coordinated with clients, and ensured timely delivery of high-quality software products",
+        "Built a Next.js web application as part of a digital tech project, focusing on enhancing functionality and user engagement.",
+        "Integrated third-party API MailJet, optimizing performance for seamless email communications.",
+        "Worked in a collaborative environment, delivering milestones ahead of schedule."
       ]
     },
     {
-      title: "Fullstack Developer at Flatiron School",
+      title: "Software Developer | Code by Istafa",
+      link: "#0",
+      icon: <SvgCodeByIstafa />,
+      date: "June 2022 - Present",
+      location: "Holtsville, NY",
+      description:[
+        "Developed custom web applications using Next.js and React, optimizing user experience and performance.",
+        "Collaborated with clients to define project goals and deliver tailored solutions.",
+        "Managed project timelines, ensuring delivery within deadlines and budget.",
+      ]
+    },
+    {
+      title: "Software Engineering Student | Flatiron School",
       link: "#0",
       icon: <SvgFlatironSchool />,
-      date: "2021 - 2022",
+      date: "May 2021 - June 2022",
       location: "New York, NYC",
       description:[
-        "Created and deployed full-stack web applications using Javascript, Ruby, HTML, CSS, and React.",
-        "orked in teams to design, develop, and present capstone projects, simulating real-world software development environments.",
-        "Participated in peer code reviews and debugging sessions, enhancing code quality and problem-solving skills.",
-        "Produced detailed technical documentation for projects, demonstrating the ability to communicate complex technical concepts clearly.",
+        "Created full-stack applications using JavaScript, Ruby, React, and Rails, applying modern web development techniques.",
+        "Contributed to peer reviews and debugging sessions, improving code quality and problem-solving abilities.",
+        "Produced technical documentation, demonstrating clear communication of complex concepts.",
       ]
 
     },

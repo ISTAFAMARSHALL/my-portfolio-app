@@ -1,5 +1,6 @@
 export default function Articles() {
   const items = [
+    
     {
       title: "Phase 1 - Project Complete: 5 things I learned along the way!",
       link: "https://medium.com/@istafa.a.marshall/phase-1-project-complete-5-things-i-learned-along-the-way-c7de3da265a1",
@@ -43,7 +44,7 @@ export default function Articles() {
   ];
 
   return (
-    <section style={{marginTop:'-20px'}}>
+    <section >
       <h2 className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
         Articles
       </h2>

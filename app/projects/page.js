@@ -4,90 +4,8 @@ import smartBuyImg from '@/public/images/SmartBuy Screenshot .jpeg'
 import stimsimg from '@/public/images/S.T.I.M.S Screenshot .jpeg'
 import maybellineImg from '@/public/images/Maybelline Catelog Screenshot.jpeg'
 import reservationappImg from '@/public/images/Reservation App Screenshot.jpeg'
-import styles from './page.module.css'; // Adjust the path as necessary
-
-
-// export const metadata = {
-
-//     title: "All Projects",
-//     description: "View all projects created by developer Istafa A. Marshall",
-    
-// }
-  
-// export default function ProjectsPage() {
-
-//     const items = [
-//         {
-//             title: "Smart Buy",
-//             slug: "smart-buy",
-//             description: "Best Buy Clone",
-//             role_contributions: "Created App",
-//             technology: "React, Ruby on Rails",
-//             links: "",
-//             screenshots: smartBuyImg
-//         },
-//         {
-//             title: "S.T.I.M.S",
-//             slug: "stims",
-//             description: "Educational app",
-//             role_contributions: "Created App",
-//             technology: "React, Ruby on Rails",
-//             links: "",
-//             screenshots: stimsimg
-//         },
-//         {
-//             title: "Maybelline Catelog Collection",
-//             slug: "maybelline-catelog-collection",
-//             description: "Mark up Tracker",
-//             role_contributions: "Created App",
-//             technology: "React, Ruby on Rails",
-//             links: "",
-//             screenshots: maybellineImg
-//         },
-//         {
-//             title: "Reservation App",
-//             slug: "reservation-app",
-//             description: "Restaurant Tracker",
-//             role_contributions: "Created App",
-//             technology: "React, Ruby on Rails",
-//             links: "",
-//             screenshots: reservationappImg
-//         }
-//     ]
-
-//     return (
-//         <div style={{}} >
-//             <h2 style={{ textAlign:'center' , fontSize:'30px' , fontWeight:'bold' , marginTop: '-70px'}}
-//             >All Projects</h2>
-            
-//             {items.map((item) => {
-//                 return (
-//                     <ul key={item.title} >
-//                         <h1>{item.title}</h1>
-                        
-//                         <Image
-//                             src={item.screenshots}
-//                             width={44}
-//                             height={44}
-//                             alt={item.title}
-//                         />
-
-//                         <Link href={`/projects/${item.slug}`}> View App Details</Link>
-
-//                     </ul>
-//                 )
-//             })}
-//         </div>
-//     )
-// }
-
-// import Image from "next/image";
-// import Link from 'next/link';
-// import smartBuyImg from '@/public/images/SmartBuy Screenshot.jpeg'
-// import stimsimg from '@/public/images/S.T.I.M.S Screenshot.jpeg'
-// import maybellineImg from '@/public/images/Maybelline Catelog Screenshot.jpeg'
-// import reservationappImg from '@/public/images/Reservation App Screenshot.jpeg'
-// import styles from './projects-page.module.css'; // Adjust the path as necessary
+import moreThanJustaLunchappImg from '@/public/images/More than Just a Lunch IMG 1.png'
+import styles from './page.module.css' // Adjust the path as necessary
 
 export const metadata = {
     title: "All Projects",
@@ -95,6 +13,15 @@ export const metadata = {
 }
 
 const items = [
+    {
+        title: "More Than Just a Lunch App",
+        slug: "more-than-just-a-lunch-app",
+        description: "A dynamic and responsive web app allowing users to register for events; read testimonials, and learn about the organization's mission.",
+        role_contributions: "Created App",
+        technology: "Next.js, React, MailJet API",
+        links: "",
+        screenshots: moreThanJustaLunchappImg
+    },
     {
         title: "Smart Buy",
         slug: "smart-buy",
@@ -140,8 +67,8 @@ export default function ProjectsPage() {
             <h2 style={{ textAlign:'center' , fontSize:'45px', fontWeight:'bold'}}>All Projects</h2>
             
             <ul className={styles.projectList}>
-                {items.map((item) => (
-                    <li key={item.title} className={styles.projectItem} 
+                {items.map((item, index) => (
+                    <li key={index} className={styles.projectItem} 
                     style={{ 
                         border: '1px solid slategray', 
                         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 

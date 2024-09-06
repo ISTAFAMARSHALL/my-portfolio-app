@@ -29,6 +29,13 @@ import smartbuyImg3 from '@/public/images/SmartBuy Screenshot 3.jpeg'
 import smartbuyImg4 from '@/public/images/SmartBuy Screenshot 4.png'
 import smartbuyImg5 from '@/public/images/SmartBuy Screenshot 5.png'
 
+import moreThanJustaLunchappImg1 from '@/public/images/More than Just a Lunch IMG 1.png'
+import moreThanJustaLunchappImg2 from '@/public/images/More than Just a Lunch IMG 2.png'
+import moreThanJustaLunchappImg3 from '@/public/images/More than Just a Lunch IMG 3.png'
+import moreThanJustaLunchappImg4 from '@/public/images/More than Just a Lunch IMG 4.png'
+import moreThanJustaLunchappImg5 from '@/public/images/More than Just a Lunch IMG 5.png'
+import moreThanJustaLunchappImg6 from '@/public/images/More than Just a Lunch IMG 6.png'
+
 let allImgs = [
     {image: smartbuyImg1, alt:'smartbuyImg1'},
     {image: smartbuyImg2, alt:'smartbuyImg2'},
@@ -50,6 +57,12 @@ let allImgs = [
     {image: maybellineImg3, alt:'maybellineImg3'},
     {image: maybellineImg4, alt:'maybellineImg4'},
     {image: maybellineImg5, alt:'maybellineImg5'},
+    {image: moreThanJustaLunchappImg1, alt:'more-than-just-a-lunch-appIMG1'},
+    {image: moreThanJustaLunchappImg2, alt:'more-than-just-a-lunch-appIMG2'},
+    {image: moreThanJustaLunchappImg3, alt:'more-than-just-a-lunch-appIMG3'},
+    {image: moreThanJustaLunchappImg4, alt:'more-than-just-a-lunch-appIMG4'},
+    {image: moreThanJustaLunchappImg5, alt:'more-than-just-a-lunch-appIMG6'},
+    {image: moreThanJustaLunchappImg6, alt:'more-than-just-a-lunch-appIMG6'},
 ]
 
 export default function ImageSlideShow (props) {
