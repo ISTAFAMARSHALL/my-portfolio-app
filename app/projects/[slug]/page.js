@@ -1,13 +1,9 @@
-import Image from "next/image";
-import Link from 'next/link';
+import ImageSlideShow from '@/components/image-slide-show';
 import smartBuyImg from '@/public/images/projects/smart-buy/SmartBuy Screenshot .jpeg'
 import stimsimg from '@/public/images/projects/stims/S.T.I.M.S Screenshot .jpeg'
 import maybellineImg from '@/public/images/projects/maybelline/Maybelline Catelog Screenshot.jpeg'
 import reservationappImg from '@/public/images/projects/reservations/Reservation App Screenshot.jpeg'
 import moreThanJustaLunchappImg from '@/public/images/projects/more-than-just-a-lunch/More than Just a Lunch IMG 1.png'
-
-import { title } from "process";
-
 
 const items = [
     {
@@ -133,8 +129,8 @@ export default function ProjectDetailsPage(props) {
 
                     
                     {item.technology.map((tech, index) => (
-                        <ul style={{ marginTop: '-15px'}}>
-                            <li key={index} style={{ margin: '25px' , textAlign: 'left' , marginLeft:'30px' , listStyle:'outside' }} >{tech}</li>
+                        <ul key={index} style={{ marginTop: '-15px'}}>
+                            <li  style={{ margin: '25px' , textAlign: 'left' , marginLeft:'30px' , listStyle:'outside' }} >{tech}</li>
                         </ul>
                     ))}
                     
