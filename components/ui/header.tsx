@@ -1,16 +1,4 @@
-import ThemeToggle from "./theme-toggle";
-import Image from "next/image";
-import { redirect } from 'next/navigation'
-import myImg01 from '@/public/images/my-image.jpeg'
-import smartBuyImg from '@/public/images/SmartBuy Screenshot .jpeg'
-import stimsimg from '@/public/images/S.T.I.M.S Screenshot .jpeg'
-import maybellineImg from '@/public/images/Maybelline Catelog Screenshot.jpeg'
-import reservationappImg from '@/public/images/Reservation App Screenshot.jpeg'
-import newerImg from '@/public/images/C65EE828-4A30-462F-97EB-20BD146599E1_4_5005_c.jpeg'
-import ProjectDisplay from '@/components/project-main-page-view'
-
-
-import sqliteImg from '@/public/images/sqlite.svg'
+import ProjectDisplay from '@/components/project-main-page-view';
 import Link from "next/link";
 
 export default function Header() {
