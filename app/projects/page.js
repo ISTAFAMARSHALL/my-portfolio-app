@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from 'next/link';
-import smartBuyImg from '@/public/images/SmartBuy Screenshot .jpeg'
-import stimsimg from '@/public/images/S.T.I.M.S Screenshot .jpeg'
-import maybellineImg from '@/public/images/Maybelline Catelog Screenshot.jpeg'
-import reservationappImg from '@/public/images/Reservation App Screenshot.jpeg'
-import moreThanJustaLunchappImg from '@/public/images/More than Just a Lunch IMG 1.png'
+import smartBuyImg from '@/public/images/projects/smart-buy/SmartBuy Screenshot .jpeg'
+import stimsimg from '@/public/images/projects/stims/S.T.I.M.S Screenshot .jpeg'
+import maybellineImg from '@/public/images/projects/maybelline/Maybelline Catelog Screenshot.jpeg'
+import reservationappImg from '@/public/images/projects/reservations/Reservation App Screenshot.jpeg'
+import moreThanJustaLunchappImg from '@/public/images/projects/more-than-just-a-lunch/More than Just a Lunch IMG 1.png'
 import styles from './page.module.css' // Adjust the path as necessary
 
 export const metadata = {

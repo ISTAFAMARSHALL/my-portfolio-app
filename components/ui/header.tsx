@@ -7,7 +7,7 @@ import stimsimg from '@/public/images/S.T.I.M.S Screenshot .jpeg'
 import maybellineImg from '@/public/images/Maybelline Catelog Screenshot.jpeg'
 import reservationappImg from '@/public/images/Reservation App Screenshot.jpeg'
 import newerImg from '@/public/images/C65EE828-4A30-462F-97EB-20BD146599E1_4_5005_c.jpeg'
-import ImageClientView from '@/components/image-client-view'
+import ProjectDisplay from '@/components/project-main-page-view'
 
 
 import sqliteImg from '@/public/images/sqlite.svg'
@@ -88,7 +88,7 @@ export default function Header() {
         Featured Projects 
       </h2>
 
-      <ImageClientView />
+      <ProjectDisplay />
       
       <Link href={'/projects'} >
         <h1 style={{margin: '10px', fontWeight:'bold', fontStyle: 'italic'}}>

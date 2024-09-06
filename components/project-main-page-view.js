@@ -2,11 +2,11 @@
 import { redirect } from 'next/navigation'
 import Image from "next/image";
 
-import smartBuyImg from '@/public/images/SmartBuy Screenshot .jpeg'
-import stimsimg from '@/public/images/S.T.I.M.S Screenshot .jpeg'
-import maybellineImg from '@/public/images/Maybelline Catelog Screenshot.jpeg'
-import reservationappImg from '@/public/images/Reservation App Screenshot.jpeg'
-import moreThanJustaLunchappImg1 from '@/public/images/More than Just a Lunch IMG 1.png'
+import smartBuyImg from '@/public/images/projects/smart-buy/SmartBuy Screenshot .jpeg'
+import stimsimg from '@/public/images/projects/stims/S.T.I.M.S Screenshot .jpeg'
+import maybellineImg from '@/public/images/projects/maybelline/Maybelline Catelog Screenshot.jpeg'
+import reservationappImg from '@/public/images/projects/reservations/Reservation App Screenshot.jpeg'
+import moreThanJustaLunchappImg from '@/public/images/projects/more-than-just-a-lunch/More than Just a Lunch IMG 1.png'
 
 export default function ImageClientView () {
 
@@ -18,7 +18,7 @@ export default function ImageClientView () {
             <a style={{display: 'block'}} href={'/projects/more-than-just-a-lunch-app'}>
                 <Image
                     className="rounded-xl odd:rotate-2 even:-rotate-2 group-hover:rotate-0 transition duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)] shadow-lg"
-                    src={moreThanJustaLunchappImg1}
+                    src={moreThanJustaLunchappImg}
                     width={180}
                     height={180}
                     alt="More Than Just a Lunch App"

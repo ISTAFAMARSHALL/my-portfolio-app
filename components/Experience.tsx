@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import flatIronImg from '@/public/images/id69leq3tX_1719602564623.png'
-import codebyistafImg from '@/public/images/C65EE828-4A30-462F-97EB-20BD146599E1_4_5005_c.jpeg'
-import ascentUpImg from '@/public/images/AscentUP_logo_161x40.png'
+import flatIronImg from '@/public/experience-icons/id69leq3tX_1719602564623.png'
+import codebyistafImg from '@/public/experience-icons/C65EE828-4A30-462F-97EB-20BD146599E1_4_5005_c.jpeg'
+import ascentUpImg from '@/public/experience-icons/AscentUP_logo_161x40.png'
 
 const SvgFlatironSchool = () => (
     <Image src={flatIronImg} alt={flatIronImg.src}  width={40} height={40} className="shrink-0 w-10 h-10 rounded-full"/>
