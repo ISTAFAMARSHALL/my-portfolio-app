@@ -19,7 +19,7 @@ const SvgAscentUp= () => (
 export default function Experience() {
   const items = [
     {
-      title: "Software Developer Intern | AscentUp",
+      title: "Software Developer Intern | AscentUp"
       link: "#0",
       icon: <SvgAscentUp />,
       date: "July 2024 - September 2024",

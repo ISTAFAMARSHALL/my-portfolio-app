@@ -20,7 +20,7 @@ export default function ResumePage() {
             <Image
                 src={resume2}
                 priority
-            />;
+            />
             
         </>
     );

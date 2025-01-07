@@ -1,4 +1,4 @@
-*, *::after, *::before {
+/* *, *::after, *::before {
     margin: 0;
     padding: 0;
     border: none;
@@ -69,4 +69,96 @@ body {
 
 .badge-icon:hover {
     transform: scale(1.1);
+} */
+
+
+
+/* Badge Container */
+.badgeContainer {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Scroll Container */
+.scrollContainer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Carousel Track */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  animation: scroll-horizontal 15s linear infinite;
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Badge Icon */
+.badgeIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badgeIcon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.iconImage {
+  width: 50px;
+  height: 50px;
+}
+
+.badgeLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel {
+    animation-duration: 20s;
+  }
+
+  .iconImage {
+    width: 40px;
+    height: 40px;
+  }
+
+  .badgeLabel {
+    font-size: 12px;
+  }
 }

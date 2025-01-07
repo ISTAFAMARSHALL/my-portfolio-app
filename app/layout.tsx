@@ -37,7 +37,7 @@ export default function RootLayout({
               <div className="w-full bg-white dark:bg-gray-900 border-x border-gray-100 dark:border-gray-800 box-content">
                 <div className="px-3 md:px-16">
                   <div className="flex flex-col min-h-screen">
-                    <MainHeader />
+                    {/* <MainHeader /> */}
 
                     <main className="grow py-12 space-y-12">{children}</main>
 

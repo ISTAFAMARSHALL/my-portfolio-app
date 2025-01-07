@@ -1,0 +1,38 @@
+.aboutSection {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: left;
+  }
+  
+  .text p {
+    margin-bottom: 15px;
+  }
